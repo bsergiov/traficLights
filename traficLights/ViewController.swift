@@ -8,14 +8,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    //MARK: - IB Outlets
     @IBOutlet weak var redView: UIView!
     @IBOutlet weak var orangeView: UIView!
     @IBOutlet weak var greenView: UIView!
     
     @IBOutlet weak var changeButton: UIButton!
     
-    
+    //MARK: - Life Cycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         redView.alpha = 0.1
@@ -27,12 +28,14 @@ class ViewController: UIViewController {
         greenView.layer.cornerRadius = 70
         
     }
-
+    
+    //MARK: - IB Actions
     @IBAction func changedCollor() {
+        
         if changeButton.titleLabel?.text == "START"{
             redView.alpha = 1
             changeButton.setTitle("NEXT", for: .normal)
-             return
+            return
         }
         
         if redView.alpha == 1 {
