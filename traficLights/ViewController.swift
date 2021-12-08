@@ -23,9 +23,9 @@ class ViewController: UIViewController {
         orangeView.alpha = 0.1
         greenView.alpha = 0.1
         
-        redView.layer.cornerRadius = 70
-        orangeView.layer.cornerRadius = 70
-        greenView.layer.cornerRadius = 70
+        redView.layer.cornerRadius = 50
+        orangeView.layer.cornerRadius = 50
+        greenView.layer.cornerRadius = 50
         
     }
     
@@ -39,15 +39,15 @@ class ViewController: UIViewController {
         }
         
         if redView.alpha == 1 {
-            redView.alpha = 0.1
+            redView.alpha = 0.2
             orangeView.alpha = 1
             return
         } else if orangeView.alpha == 1{
-            orangeView.alpha = 0.1
+            orangeView.alpha = 0.2
             greenView.alpha = 1
             return
         } else if greenView.alpha == 1 {
-            greenView.alpha = 0.1
+            greenView.alpha = 0.2
             redView.alpha = 1
             return
         }
